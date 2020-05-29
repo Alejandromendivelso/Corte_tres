@@ -18,14 +18,14 @@ for v in V:
     turtle.goto(v)
     turtle.dot('blue')
 
-n = 10000 
+n = 10000000
 p = (random.uniform(-200,200),random.uniform(-200,200)) 
 t = turtle.Turtle()
 t.up()
 t.hideturtle()
 for i in range(n):
     t.goto(p)
-    t.dot(2,'red')
+    t.dot(4,'red')
     r = random.randrange(len(V)) 
     p = ((V[r][0]+p[0])/2,(V[r][1]+p[1])/2)   
     if i % 1000 == 0: 
